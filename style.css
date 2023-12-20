@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rethink Sans;
+}
+
+body {
+    background: #EFF8FF;
+}
+
+.mainContainer {
+    width: 40%;
+    height: 30%;
+    margin: 3% 30%;
+    padding: 2%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.heading img {
+    border-radius: 50%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    color: #000;
+    font-size: 5vmin;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.textContainer {
+    border-radius: 7px;
+    height: 8vh;
+    width: 100%;
+    background: #092635;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#textField {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    flex: 1;
+    width: 60%;
+    height: 8vh;
+    background: none;
+    padding-left: 10px;
+    color: #EFF8FF;
+}
+
+.textContainer #addButton {
+    background-color: #DFBF1A;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 12px;
+    margin: 10px 5px 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#addButton:hover{
+    background-color: white;
+    color: #101010;
+}
+
+.taskContainer {
+    border-radius: 7px;
+    height: auto;
+    width: 100%;
+    background: #092635;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 22px;
+
+}
+
+.top_taskContainer li {
+    padding-top: 10px;
+    color: #EBEBEB;
+    list-style: none;
+    padding: 13px 10px 13px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding-top: 11px;
+    padding-left: 70px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    color: #EBEBEB;
+    background-image: url("circle-regular.svg");
+    background-size: cover;
+    background-position: center;
+    top: 14px;
+    left: 40px;
+}
+
+ul li.checked {
+    color: #868686;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url("circle-check-solid2.svg");
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    color: #ff3c00;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 50%;
+}
